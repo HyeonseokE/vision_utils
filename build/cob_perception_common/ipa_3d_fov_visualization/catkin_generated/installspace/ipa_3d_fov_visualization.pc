@@ -1,0 +1,8 @@
+prefix=/home/hscho/vision_ws/install
+
+Name: ipa_3d_fov_visualization
+Description: Description of ipa_3d_fov_visualization
+Version: 0.6.20
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs visualization_msgs

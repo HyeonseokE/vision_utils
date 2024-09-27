@@ -1,0 +1,2 @@
+traffic_light_detection
+-DCATKIN_DEVEL_PREFIX=/home/hscho/vision_ws/devel -DCMAKE_INSTALL_PREFIX=/home/hscho/vision_ws/install -G Unix Makefiles
