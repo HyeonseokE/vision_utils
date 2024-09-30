@@ -11,7 +11,7 @@ import numpy as np
 
 class Detector:
     def __init__(self):
-        model_path = "./src/traffic_light_detection/src/train11/weights/best.pt"
+        model_path = "/home/hscho/vision_ws/src/traffic_light_detection/src/train16/weights/best.pt"
         self.model = YOLO(model_path)
 
         ######### info #########
@@ -44,8 +44,12 @@ class Detector:
         detection_array.header = data.header
 
         if len(res.boxes):
-            log = f'{len(res.boxes)} object detected.'
+            if len(res.boxes) == 1:
+                log = f'{len(res.boxes)} object detected.'
+            else:
+                log = f'{len(res.boxes)} objects detected.'
             rospy.loginfo(log)
+            
             for box in res.boxes:
                 detection = Detection()
 
