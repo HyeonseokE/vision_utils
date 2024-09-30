@@ -7,5 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH='/opt/ros/noetic:/home/hscho/vision_ws/devel:/opt/ros/noetic/share'
 export PWD='/home/hscho/vision_ws/build'
